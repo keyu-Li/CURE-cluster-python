@@ -33,7 +33,7 @@ plt.subplot(122)
 scatterColors = ['black', 'blue', 'green', 'yellow', 'red', 'purple', 'orange', 'brown', 'cyan', 'brown',
                  'chocolate', 'darkgreen', 'darkblue', 'azure', 'bisque']
 for i in range(data_set.shape[0]):
-    color = scatterColors[Label_pre[i]]
+    color = scatterColors[Label_pre[i]-1]
     plt.scatter(data_set[i, 0], data_set[i, 1], marker='o', c=color)
 plt.text(0, 0, "clusterResult")
 plt.show()
